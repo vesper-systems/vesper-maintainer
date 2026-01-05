@@ -1,7 +1,9 @@
 {
   "name": "Maintainer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {},
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": []
