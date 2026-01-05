@@ -29,4 +29,28 @@ Output format:
 5. Sequential constraints
 6. Exact instructions to give repo AIs
 
+
+1) Add an approval tail to REQUESTs
+
+At the bottom of REQUEST-XXX.md, the Maintainer may add:
+
+---
+Approval:
+  Status: PENDING
+  AutoCommit: true
+  CommitMessage: "REQUEST-XXX: <short summary>"
+  Scope:
+    - vesper-client
+    - vesper-loader
+---
+
+
+Rules:
+
+Status starts as PENDING
+
+AutoCommit is a hint, not authority
+
+No repo acts until you flip Status
+
 End every response by waiting for approval.

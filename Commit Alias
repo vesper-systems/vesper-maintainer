@@ -1,0 +1,87 @@
+Add the alias (once per Codespace)
+
+In the Codespace terminal:
+
+git config --global alias.ac '!git add . && git commit -m "$1" && git push'
+
+Verify it worked
+git ac "test commit message"
+
+
+(If there are no changes, Git will just say nothing to commit.)
+
+How you’ll use it
+
+After you approve changes:
+
+git ac "REQUEST-002: client startup fix"
+
+
+Recommended sections for PROMPT-HUMANONLY.md
+1) Standing Intent
+
+What this project is for
+
+Non-negotiables (security-first, paid client, no client authority, etc.)
+
+Things you never want to “accidentally” change
+
+2) Approval Rules (Your Gate)
+
+What you require before approving a REQUEST
+
+When auto-commit is allowed vs blocked
+
+When protocol changes are forbidden
+
+3) Current Focus
+
+The one REQUEST or phase you care about right now
+
+What you explicitly don’t want worked on
+
+4) AI Guardrails (Quick Reminders)
+
+Red flags that mean “stop the AI”
+
+Common failure modes you’ve seen
+
+Phrases you use to reset or halt execution
+
+5) Release Criteria
+
+What “ready” means for:
+
+dev
+
+beta
+
+paid release
+
+Required checks before shipping
+
+6) Rollback Rules
+
+When to revert immediately
+
+What kinds of changes are always reversible
+
+What must never be hotfixed
+
+7) Long-Term Vision (Unstructured)
+
+Ideas you don’t want implemented yet
+
+Directional thoughts
+
+Things you don’t want AIs optimizing prematurely
+
+8) Emergency Notes
+
+What to do if:
+
+builds fail everywhere
+
+protocol gets messy
+
+you step away for weeks and come back
