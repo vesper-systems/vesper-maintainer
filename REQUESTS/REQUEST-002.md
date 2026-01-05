@@ -52,8 +52,8 @@ Affected Repos
 - vesper-protocol — protocol and QA harness
 
 Approval
-- Status: PENDING
-- AutoCommit: false
+- Status: APPROVED
+- AutoCommit: true
 - CommitMessage: "REQUEST-002: Parallel early rollout (Loader|Backend|Client|QA)"
 - Scope: ["vesper-maintainer","vesper-loader","vesper-backend","vesper-client","vesper-protocol"]
 
