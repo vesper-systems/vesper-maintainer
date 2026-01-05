@@ -4,8 +4,8 @@ Note: This file reflects status only. Roadmap and planning live in `ROADMAP.md`.
 
 Tracks overview
 - Loader
-- Backend (Railway)
-- Client AI
+- Backend (vesper-backend)
+- Client AI (vesper-client)
 
 Loader
 - Horizon 1
@@ -20,7 +20,7 @@ Loader
 	- HW fingerprinting (guardrailed) [Planned]
 	- Self-heal repair [Planned]
 
-Backend (Railway)
+Backend (vesper-backend)
 - Horizon 1
 	- Core services (Flags, Ingest, Inference gateway) [Planned]
 	- CI/CD and observability [Planned]
@@ -32,7 +32,7 @@ Backend (Railway)
 	- Abuse/fraud detection [Planned]
 	- Model registry + retraining [Planned]
 
-Client AI
+Client AI (vesper-client)
 - Horizon 1
 	- Visual regression bot [Planned]
 	- Price anomaly detector v1 [Planned]
@@ -80,7 +80,7 @@ Loader Agent
 	- Protocol tests pass (CAPS, schema, secure transport) [Planned]
 	- Rollback validated on failure [Planned]
 
-Backend Agent (Railway)
+Backend Agent (vesper-backend)
 - Protocol bindings
 	- /v1 API versioning + schema registry [Planned]
 	- AUTH.v1 token exchange (roles/scopes) [Planned]
@@ -96,7 +96,7 @@ Backend Agent (Railway)
 	- SLA/SLO met; blue/green deploy validated [Planned]
 	- Protocol schema compliance [Planned]
 
-Client AI Agent (Skyblock Mod)
+Client AI Agent (vesper-client)
 - Protocol bindings
 	- OPTIN.v1 telemetry emitter (rate-limited) [Planned]
 	- CAPS.v1 module capability flags [Planned]

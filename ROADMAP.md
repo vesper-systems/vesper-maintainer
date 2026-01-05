@@ -16,7 +16,7 @@ Loader
 Definition of Done
 - Clean startup on supported environments, update rollback works, flags can disable risky features remotely
 
-Backend (Railway)
+Backend (vesper-backend)
 - Core services: Feature Flags, PriceCache ingest, Telemetry intake (opt-in)
 - Inference gateway: REST endpoints for anomaly detection and summarization (stateless)
 - CI/CD on Railway with blue/green deploy
@@ -108,7 +108,7 @@ Loader Agent
 - Definition of Done (per milestone)
 	- DoD includes protocol conformance tests: CAPS negotiation, message schema validation, secure transport verification
 
-Backend Agent (Railway)
+Backend Agent (vesper-backend)
 - Protocol bindings
 	- API versioning: /v1 endpoints with schema registry
 	- AuthN/Z: token exchange per protocol AUTH.v1
@@ -125,7 +125,7 @@ Backend Agent (Railway)
 - Definition of Done
 	- DoD includes SLA SLOs and protocol schema compliance; blue/green deploy validated
 
-Client AI Agent (Skyblock Mod)
+Client AI Agent (vesper-client)
 - Protocol bindings
 	- Telemetry emitter: events tagged OPTIN.v1, rate-limited
 	- Capability flags: module exposes supported features per CAPS.v1
