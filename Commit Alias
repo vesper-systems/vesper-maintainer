@@ -2,10 +2,11 @@ Add the alias (once per Codespace)
 
 In the Codespace terminal:
 
-git config --global alias.ac '!git add . && git commit -m "$1" && git push'
+git config --global alias.ac "!git add . && git commit -m '%*' && git push"
+
 
 Verify it worked
-git ac "test commit message"
+git ac test commit message
 
 
 (If there are no changes, Git will just say nothing to commit.)
